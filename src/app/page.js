@@ -31,8 +31,8 @@ export default function Home() {
         <SecondaryInfoPanel />
         <SecondaryInfoPanel />
       </section>
-      <section className="md:hidden">
-        <div className="transition ease-in-out delay-100 duration-200">
+      <section className="h-full pt-16 md:hidden">
+        <div className="">
           {mobileClockList[mobileClockIndex]}
         </div>
         <div className="flex flex-row justify-center items-center mt-6 gap-12">
