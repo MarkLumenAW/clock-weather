@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 
 export default function BasicInfoPanel(props) {
   return (
-    <div className='w-[360px] h-[640px] md:w-[600px] md:h-[320px] flex flex-col md:flex-row justify-between items-center py-12 md:p-6 bg-violet-950/50 backdrop-blur-md rounded-3xl border-[#757575] border shadow-2xl shadow-black/60'>
+    <div className='w-[360px] h-[600px] md:w-[600px] md:h-[320px] flex flex-col md:flex-row justify-between items-center py-10 md:p-6 bg-violet-950/50 backdrop-blur-md rounded-3xl border-[#757575] border shadow-2xl shadow-black/60'>
       {/* Clock */}
       <div>
         <Clock city={"Sydney"} timezone={10} />

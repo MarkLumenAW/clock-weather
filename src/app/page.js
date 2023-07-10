@@ -35,7 +35,7 @@ export default function Home() {
         <div className="transition ease-in-out delay-100 duration-200">
           {mobileClockList[mobileClockIndex]}
         </div>
-        <div className="flex flex-row justify-center items-center mt-10 gap-12">
+        <div className="flex flex-row justify-center items-center mt-6 gap-12">
           <div className="p-1 rounded-full border border-[#757575] cursor-pointer " onClick={handleLeftClick}>
             <Icon icon="uiw:left" color="#757575" width="30" />
           </div>
