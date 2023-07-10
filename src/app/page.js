@@ -24,14 +24,14 @@ export default function Home() {
   };
 
   return (
-    <main className='h-screen md:min-h-screen xl:h-screen w-screen overflow-hidden md:overflow-scroll xl:overflow-hidden flex justify-center items-center bg-cover bg-center' style={{ backgroundImage: "url(/images/background.jpg)" }}>
-      <section className='hidden md:grid md:gap-16 md:py-20 xl:grid xl:grid-cols-2 xl:gap-10 xl:py-0 2xl:gap-28'>
+    <main className='h-screen md:min-h-screen xl:h-screen w-screen overflow-hidden md:overflow-auto flex justify-center items-center bg-cover bg-center' style={{ backgroundImage: "url(/images/background.jpg)" }}>
+      <section className='hidden md:grid md:gap-16 md:py-20 xl:grid xl:grid-cols-2 xl:gap-10 xl:py-0 2xl:gap-28 scale-95'>
         <PrimaryInfoPanel />
         <SecondaryInfoPanel />
         <SecondaryInfoPanel />
         <SecondaryInfoPanel />
       </section>
-      <section className="h-full pt-16 md:hidden">
+      <section className="h-full pt-10 md:hidden">
         <div className="">
           {mobileClockList[mobileClockIndex]}
         </div>
