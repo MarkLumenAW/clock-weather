@@ -35,7 +35,7 @@ export default function Home() {
       <div className="hidden md:block absolute bottom-6">
         <Footer />
       </div>
-      <section className="h-full flex flex-col justify-center items-center gap-20 md:hidden">
+      <section className="h-full flex flex-col justify-center items-center gap-14 md:hidden">
         <div>
           <div className="">
             {mobileClockList[mobileClockIndex]}
