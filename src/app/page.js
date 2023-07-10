@@ -24,17 +24,20 @@ export default function Home() {
   };
 
   return (
-    <main className='relative h-screen md:min-h-screen xl:h-screen w-screen overflow-hidden md:overflow-auto flex flex-col justify-center items-center bg-cover bg-center' style={{ backgroundImage: "url(/images/background.jpg)" }}
+    <main className='relative min-h-screen w-screen flex flex-col justify-center items-center bg-cover bg-center' style={{ backgroundImage: "url(/images/background.jpg)" }}
     >
-      <section className='hidden md:grid md:gap-16 md:py-20 xl:grid xl:grid-cols-2 xl:gap-10 xl:py-0 2xl:gap-28'>
-        <PrimaryInfoPanel />
-        <SecondaryInfoPanel />
-        <SecondaryInfoPanel />
-        <SecondaryInfoPanel />
+      <section className='hidden md:block'>
+        <div className='md:grid md:gap-16 md:py-10 xl:grid xl:grid-cols-2 xl:gap-10 xl:py-0 xl:mt-4 2xl:gap-28'>
+          <PrimaryInfoPanel />
+          <SecondaryInfoPanel />
+          <SecondaryInfoPanel />
+          <SecondaryInfoPanel />
+        </div>
+        <div className="hidden w-full md:block md:mb-6 xl:mb-4 xl:mt-5">
+          <Footer />
+        </div>
       </section>
-      <div className="hidden md:block absolute bottom-6">
-        <Footer />
-      </div>
+
       <section className="h-full flex flex-col justify-center items-center gap-14 md:hidden">
         <div>
           <div className="">

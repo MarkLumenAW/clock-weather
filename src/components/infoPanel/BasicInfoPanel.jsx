@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 
 export default function BasicInfoPanel(props) {
   return (
-    <div className='w-[350px] h-[560px] md:w-[580px] md:h-[315px] flex flex-col md:flex-row justify-between items-center py-7 md:p-6 bg-violet-950/50 backdrop-blur-md rounded-3xl border-[#757575] border shadow-2xl shadow-black/60'>
+    <div className='w-[350px] h-[560px] md:w-[580px] md:h-[285px] flex flex-col md:flex-row justify-between items-center py-7 md:p-6 bg-violet-950/50 backdrop-blur-md rounded-3xl border-[#757575] border shadow-2xl shadow-black/60'>
       {/* Clock */}
       <div>
         <Clock city={"Sydney"} timezone={10} />
@@ -18,12 +18,12 @@ export default function BasicInfoPanel(props) {
             <Icon icon={props.locationIcon} color="white" width="28" />
           </div>
         </div>
-        <div className="text-lg flex gap-4 font-light">
+        <div className="text-lg flex gap-4 font-light -mt-2">
           <span>14:50</span>
           <span>5 July 2023</span>
         </div>
         {/* Middle */}
-        <div className="flex my-5">
+        <div className="flex my-4">
           <span className="text-8xl font-semibold w-48">15°</span>
           <div className="flex flex-col justify-between items-center py-2">
             <Icon icon="bi:cloud-rain-fill" color="white" width="55" className="my-auto" />
