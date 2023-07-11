@@ -17,11 +17,8 @@ const ClockPointerStyle = styled.div`
   box-shadow: ${props => props.light ? props.bg_white_box_shadow : props.bg_black_box_shadow};
 
   color:${props => props.light ? props.black : props.white};
-
   `;
 
-
-//此处background是一个图片。两个background可以叠加。
 ClockPointerStyle.defaultProps = {
   size: "230px",
   white: "#fff",
@@ -34,7 +31,6 @@ ClockPointerStyle.defaultProps = {
     "inset 0 0 30px rgba(0, 0, 0, 0.1), 0 0 0 4px rgba(255, 255, 255, 1)",
   bg_black_box_shadow:
     "inset 0 0 30px rgba(255, 255, 255, 0.1), 0 0 0 4px #091921",
-
 }
 
 export default ClockPointerStyle

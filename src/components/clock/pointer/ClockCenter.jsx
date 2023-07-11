@@ -15,7 +15,6 @@ ClockCenterStyle.defaultProps = {
   border: "2px solid #fff"
 }
 
-
 const ClockCenter = (props) => {
   return (
     <ClockCenterStyle />
@@ -23,6 +22,3 @@ const ClockCenter = (props) => {
 }
 
 export default ClockCenter
-
-
-// style和react部分分开写

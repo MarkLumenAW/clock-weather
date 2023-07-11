@@ -1,7 +1,6 @@
 import BasicPointer from "./BasicPointer";
 import styled from "styled-components";
 
-//此时用括号
 const MinutePointerStyle = styled(BasicPointer).attrs((props) => (
   {
     rotate: props.rotate,
@@ -9,7 +8,6 @@ const MinutePointerStyle = styled(BasicPointer).attrs((props) => (
     pointer_light: "#848484",
     pointer_dark: "#fff",
   }
-
 ))``;
 
 const MinutePointer = (props) => {
@@ -19,5 +17,3 @@ const MinutePointer = (props) => {
 };
 
 export default MinutePointer;
-
-// 可以做小项目，可以部署

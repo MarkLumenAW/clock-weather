@@ -22,15 +22,11 @@ export default function Clock(props) {
 
   const [light, setLight] = useState('true');
 
-
-
-
-  const unitDeg = 360 / 60; // 360deg / 60 格
+  const unitDeg = 360 / 60;
   const bigUnitDeg = unitDeg * 5;
 
-
   const setTime = () => {
-    let nowTime = new Date();// 获取当前的时间
+    let nowTime = new Date();
     let day = new Date(nowTime.getTime() + timezone * 60 * 60 * 1000);
 
     let pureHourDeg = day.getUTCHours() * bigUnitDeg;

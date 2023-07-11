@@ -1,7 +1,6 @@
 import BasicPointer from "./BasicPointer";
 import styled from "styled-components";
 
-//此时用括号
 const SecondPointerStyle = styled(BasicPointer).attrs((props) => (
   {
     rotate: props.rotate,
@@ -9,7 +8,6 @@ const SecondPointerStyle = styled(BasicPointer).attrs((props) => (
     tail: 20,
     width: 2,
   }
-
 ))``;
 
 const SecondPointer = (props) => {
