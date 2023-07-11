@@ -4,7 +4,7 @@ import ClockPointer from './pointer/ClockPointer';
 
 
 export default function Clock(props) {
-  const { city, timezone } = props;
+  const { location, timezone } = props;
 
   const [hourDeg, setHourDeg] = useState();
   const [minuteDeg, setMinuteDeg] = useState();
