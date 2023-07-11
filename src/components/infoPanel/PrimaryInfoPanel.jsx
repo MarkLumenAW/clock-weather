@@ -6,7 +6,7 @@ import axios from 'axios';
 export default function PrimaryInfoPanel(props) {
 
   const location = 'melbourne';
-  const timeURL = 'http://worldtimeapi.org/api/timezone/Australia/Melbourne';
+  const timeURL = 'https://worldtimeapi.org/api/timezone/Australia/Melbourne';
 
   return (
     <BasicInfoPanel 
