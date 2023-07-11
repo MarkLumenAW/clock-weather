@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ClockBackground from './ClockBackground';
 import ClockPointer from './pointer/ClockPointer';
-import { StyleSheetManager } from 'styled-components';
 
 
 export default function Clock(props) {

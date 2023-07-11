@@ -7,11 +7,29 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
 
+  const infoPanel_2 = {
+    location: 'New York',
+    URL: 'https://worldtimeapi.org/api/timezone/America/New_York',
+  };
+
+  const infoPanel_3 = {
+    location: 'London',
+    URL: 'https://worldtimeapi.org/api/timezone/Europe/London',
+  };
+
+  const infoPanel_4 = {
+    location: 'Tokyo',
+    URL: 'https://worldtimeapi.org/api/timezone/Asia/Tokyo',
+  };
+
+  
+
+
   const mobileClockList = [
     <PrimaryInfoPanel />,
-    <SecondaryInfoPanel />,
-    <PrimaryInfoPanel />,
-    <SecondaryInfoPanel />,
+    <SecondaryInfoPanel location={infoPanel_2.location} url={infoPanel_2.URL} />,
+    <SecondaryInfoPanel location={infoPanel_3.location} url={infoPanel_3.URL} />,
+    <SecondaryInfoPanel location={infoPanel_4.location} url={infoPanel_4.URL} />,
   ];
 
   const [mobileClockIndex, setMobileClockIndex] = useState(0);
@@ -29,9 +47,9 @@ export default function Home() {
       <section className='hidden md:block'>
         <div className='md:grid md:gap-16 md:py-10 xl:grid xl:grid-cols-2 xl:gap-10 xl:py-0 xl:mt-4 2xl:gap-28'>
           <PrimaryInfoPanel />
-          <SecondaryInfoPanel />
-          <SecondaryInfoPanel />
-          <SecondaryInfoPanel />
+          <SecondaryInfoPanel location={infoPanel_2.location} url={infoPanel_2.URL} />
+          <SecondaryInfoPanel location={infoPanel_3.location} url={infoPanel_3.URL} />
+          <SecondaryInfoPanel location={infoPanel_4.location} url={infoPanel_4.URL} />
         </div>
         <div className="hidden w-full md:block md:mb-6 xl:mb-4 xl:mt-5">
           <Footer />
