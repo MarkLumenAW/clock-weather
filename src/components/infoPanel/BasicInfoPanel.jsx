@@ -2,6 +2,9 @@ import Clock from "../clock/Clock";
 import { Icon } from '@iconify/react';
 import useSWR from 'swr';
 import axios from 'axios';
+import moment from "moment";
+import 'moment-timezone';
+
 
 const fetcher = url => axios.get(url).then(res => res.data);
 
@@ -19,20 +22,18 @@ export default function BasicInfoPanel(props) {
   }
 
   const timezone = Number(data.utc_offset.split(':')[0]);
-  const timeDate = new Date(data.datetime);
-  console.log(location,timeDate)
-  const hours = timeDate.getHours();
-  const minutes = timeDate.getMinutes();
-  const day = timeDate.getDate();
-  const year = timeDate.getFullYear();
-  const month = timeDate.toLocaleDateString('en-US', { month: 'short' });
-  const weekday = timeDate.toLocaleDateString('en-US', { weekday: 'short' });
+
+  const timeDate = moment.tz(data.datetime, data.timezone);
+
+  const time = timeDate.format('HH:mm')
+  const date = timeDate.format('DD MMM YYYY');
+  const weekday = timeDate.format('ddd');
 
   return (
     <div className='w-[350px] h-[560px] md:w-[580px] md:h-[285px] flex flex-col md:flex-row justify-between items-center py-7 md:p-6 bg-violet-950/50 backdrop-blur-md rounded-3xl border-[#757575] border shadow-2xl shadow-black/60'>
       {/* Clock */}
       <div>
-        <Clock city={location} timezone={timezone} hours={hours} minutes={minutes} />
+        <Clock city={location} timezone={timezone} />
       </div>
       {/* Weather */}
       <div className="text-white md:w-[53%]">
@@ -44,8 +45,8 @@ export default function BasicInfoPanel(props) {
           </div>
         </div>
         <div className="text-lg flex gap-4 font-light -mt-2">
-          <span className="min-w-[46px]">{hours}:{minutes}</span>
-          <span className="min-w-[96px]">{day} {month} {year}</span>
+          <span className="min-w-[46px]">{time}</span>
+          <span className="min-w-[96px]">{date}</span>
           <span>{weekday}</span>
         </div>
         {/* Middle */}

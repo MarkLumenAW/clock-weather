@@ -22,8 +22,6 @@ export default function Home() {
     URL: 'https://worldtimeapi.org/api/timezone/Asia/Tokyo',
   };
 
-  
-
 
   const mobileClockList = [
     <PrimaryInfoPanel />,
