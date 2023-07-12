@@ -51,7 +51,7 @@ export default function Clock(props) {
       setTime();
     }, 200);
     return () => clearInterval(interval);
-  }, []);
+  }, [timezone]);
 
   return (
         <ClockPointer light={light} size={props.size} hourDeg={hourDeg} minuteDeg={minuteDeg} secondDeg={secondDeg}></ClockPointer>

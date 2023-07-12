@@ -6,6 +6,7 @@ import moment from "moment";
 import 'moment-timezone';
 import { weatherIcon } from "@/utils/weatherAPI";
 import InfoButton from "../UI/InfoButton";
+import { useState } from "react";
 
 const fetcher = url => axios.get(url).then(res => res.data);
 
