@@ -1,4 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Clock & Weather App
+
+This application, built with [Next.js](https://nextjs.org/), provides real-time clock and weather data for four different cities around the world. The time and weather information is fetched from an API, providing the user with up-to-the-minute updates.
+
+In the future, this app is planned to be updated with features such as automatic detection of the user's location and custom city selection. User creation and login functionality are also in the pipeline to allow personalized settings and storage of user-specific data.
+
+## Technical Stack
+
+This application utilizes several modern web technologies, including:
+
+- **Next.js**: The core framework used to build this server-rendered React application.
+- **React (with Hooks)**: Used for building the user interface and handling component state and side effects.
+- **Styled Components**: Utilized for writing CSS in JavaScript, allowing for more dynamic and reusable components.
+- **SWR**: Used for efficient, fast, and lightweight data fetching.
+- **Axios**: Promised-based HTTP client for making API calls.
+- **Moment.js & Moment Timezone**: Used for parsing, validating, manipulating, and displaying dates and times in JavaScript, in any timezone.
+- **Tailwind CSS**: A utility-first CSS framework used for rapidly building custom user interfaces.
+- **Headless UI**: A completely unstyled, fully accessible UI component library, designed to integrate beautifully with Tailwind CSS.
+- **@iconify/react**: An icons library that includes popular icon sets that can be used easily in React.
+- **PostCSS and Autoprefixer**: Tools for transforming CSS with JavaScript, and for adding vendor prefixes to CSS rules.
 
 ## Getting Started
 
