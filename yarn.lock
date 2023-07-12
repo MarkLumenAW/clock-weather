@@ -157,6 +157,13 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
+"@headlessui/react@^1.7.15":
+  version "1.7.15"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.7.15.tgz#53ef6ae132af81b8f188414767b6e79ebf8dc73f"
+  integrity sha512-OTO0XtoRQ6JPB1cKNFYBZv2Q0JMqMGNhYP1CjPvcJvjz8YGokz8oAj89HIYZGN0gZzn/4kk9iUpmMF4Q21Gsqw==
+  dependencies:
+    client-only "^0.0.1"
+
 "@iconify/react@^4.1.1":
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/@iconify/react/-/react-4.1.1.tgz#da1bf03cdca9427f07cf22cf5b63fa8f02db4722"
@@ -463,7 +470,7 @@ chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
-client-only@0.0.1:
+client-only@0.0.1, client-only@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
   integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
