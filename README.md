@@ -8,12 +8,12 @@ This application, built with [Next.js](https://nextjs.org/), provides real-time 
 
 Here's a glimpse of the Clock & Weather App, highlighting its features and aesthetics.
 
-### Desktop View
 ![Desktop View](public/images/clock-weather.png)
+
 *Desktop version of the Clock & Weather App*
 
-### Mobile View
-<img src="public/images/clock-weather-mobile.jpg" alt="Mobile View" width="250"/>
+<img src="public/images/clock-weather-mobile.jpg" alt="Mobile View" width="280"/>
+
 *Mobile version of the Clock & Weather App*
 
 ## Technical Stack
